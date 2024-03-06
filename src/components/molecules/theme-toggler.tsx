@@ -23,7 +23,7 @@ export function ThemeToggle() {
         <DropdownMenuItem
           data-umami-event='theme-toggle-light'
           onClick={() => {
-            confirm('Get ready for a dazzling experience! 🌟 \nAre you absolutely sure you want to switch to the light mode and unleash the flashbang? 💡💥') && setTheme('light')
+            confirm('Get ready for a flashbang! 🌟 \nAre you sure you want to switch to the light mode? 💡💥') && setTheme('light')
           }}
         >
           Light
