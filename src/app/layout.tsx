@@ -16,17 +16,17 @@ import { ENV } from '@/lib/constants'
 export const metadata: Metadata = {
   metadataBase: new URL(ENV.NEXT_PUBLIC_WEBSITE_URL),
   title: {
-    default: 'Wiscaksono',
-    template: '%s | Wiscaksono'
+    default: 'Celaya',
+    template: '%s | Celaya'
   },
   description:
     "Get to know me, Christopher Celaya, through this website! I'm a passionate frontend developer and electrical engineering student, and I've poured my skills and creativity into building this site with Next.js and Tailwind CSS. Explore my interactive projects, clean portfolio, and a glimpse into my technical expertise. If you're seeking a talented developer for your next project or simply looking for inspiration, feel free to get in touch!",
   openGraph: {
-    title: 'Wiscaksono',
+    title: 'Celaya',
     description:
       "Get to know me, Christopher Celaya, through this website! I'm a passionate frontend developer and electrical engineering student, and I've poured my skills and creativity into building this site with Next.js and Tailwind CSS. Explore my interactive projects, clean portfolio, and a glimpse into my technical expertise. If you're seeking a talented developer for your next project or simply looking for inspiration, feel free to get in touch!",
     url: ENV.NEXT_PUBLIC_WEBSITE_URL,
-    siteName: 'Wiscaksono',
+    siteName: 'Celaya',
     locale: 'en_US',
     type: 'website'
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     }
   },
   twitter: {
-    title: 'Wiscaksono',
+    title: 'Celaya',
     card: 'summary_large_image'
   },
   verification: {

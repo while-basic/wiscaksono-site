@@ -84,7 +84,7 @@ export const navMenu = [
     path: '/'
   },
   {
-    name: '_about-me',
+    name: '_about',
     child: [
       {
         name: 'personal.ts',
@@ -95,8 +95,20 @@ export const navMenu = [
         path: '/about/work.ts'
       },
       {
-        name: 'gear.ts',
-        path: '/about/gear.ts'
+        name: 'hobbies.ts',
+        path: '/about/hobbies.ts'
+      },
+      {
+        name: 'certifications.ts',
+        path: '/about/certifications.ts'
+      },
+      {
+        name: 'education.ts',
+        path: '/about/education.ts'
+      },
+      {
+        name: 'skills.ts',
+        path: '/about/skills.ts'
       }
     ]
   },
@@ -155,23 +167,15 @@ export const navMenu = [
     child: [
       {
         name: 'Email',
-        path: 'mailto:wwicaksono96@gmail.com'
-      },
-      {
-        name: 'Upwork',
-        path: 'https://www.upwork.com/freelancers/~01df34d78e05fa69bf'
-      },
-      {
-        name: 'WhatsApp',
-        path: 'https://wa.me/+6287885002327'
+        path: 'mailto:chris@chriscelaya.xyz'
       },
       {
         name: 'LinkedIn',
-        path: 'https://www.linkedin.com/in/wiscaksono/'
+        path: 'https://www.linkedin.com/in/christophercelaya/'
       },
       {
         name: 'Instagram',
-        path: 'https://www.instagram.com/amachoker/'
+        path: 'https://www.instagram.com/chriscelaya/'
       }
     ]
   }
