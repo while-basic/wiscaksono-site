@@ -8,11 +8,11 @@ export default function Home() {
       <FadeIn>
         <div className='md:space-y-10 space-y-8 relative z-10'>
           <header>
-            <p className='text-muted-foreground text-lg font-extralight'>Hi all. I am</p>
+            <p className='text-muted-foreground text-lg font-extralight'>Hello all, I am</p>
             <AnimatedName />
             <h2 className='text-muted-foreground md:text-2xl sm:text-xl text-base'>
               <span className='animate-pulse'>&gt; </span>
-              Front-end developer
+              Mechatronic Technologist & Software Developer
             </h2>
 
             <div className='absolute w-full h-1/2 bg-muted-foreground/10 blur-2xl top-0 left-0 -z-10 rounded-full animate-pulse' />
