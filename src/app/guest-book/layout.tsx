@@ -72,27 +72,17 @@ const data = [
     list: [
       {
         title: 'Email',
-        href: 'mailto:wwicaksono96@gmail.com',
+        href: 'mailto:chris@chriscelaya.xyz',
         icon: <FaRegEnvelope className='w-4 h-4' />
       },
       {
-        title: 'Upwork',
-        href: 'https://www.upwork.com/freelancers/~01df34d78e05fa69bf',
-        icon: <TbBrandUpwork className='w-4 h-4' />
-      },
-      {
-        title: 'WhatsApp',
-        href: 'https://wa.me/+6287885002327',
-        icon: <BsWhatsapp className='w-4 h-4' />
-      },
-      {
         title: 'LinkedIn',
-        href: 'https://www.linkedin.com/in/wiscaksono/',
+        href: 'https://www.linkedin.com/in/christophercelaya/',
         icon: <BsLinkedin className='w-4 h-4' />
       },
       {
         title: 'Instagram',
-        href: 'https://www.instagram.com/amachoker/',
+        href: 'https://www.instagram.com/chriscelaya/',
         icon: <BsInstagram className='w-4 h-4' />
       }
     ]

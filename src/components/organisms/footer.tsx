@@ -78,7 +78,7 @@ export const Footer = async () => {
           </Link>
         </div>
         <Link target='_blank' href='https://github.com/wiscaksono' className='flex items-center gap-x-1 px-2 py-1 hover:text-foreground text-muted-foreground transition-colors'>
-          <p>Wiscaksono</p>
+          <p>Celaya</p>
           <IoLogoGithub className='text-lg' />
         </Link>
       </div>
