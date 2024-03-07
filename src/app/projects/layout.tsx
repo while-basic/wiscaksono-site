@@ -2,6 +2,12 @@ import { Suspense } from 'react'
 import { RiReactjsLine, RiHtml5Fill } from 'react-icons/ri'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { HiTerminal } from 'react-icons/hi'
+import { SiBlockchaindotcom } from "react-icons/si";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { CiMusicNote1 } from "react-icons/ci";
+import { FaCode } from "react-icons/fa";
+import { MdOutlineSecurity } from "react-icons/md";
+import { IoLogoGameControllerA } from "react-icons/io";
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/atoms/accordion'
 import { AsideLink } from '@/components/atoms/aside-link'
@@ -60,24 +66,39 @@ const data = [
         icon: <HiTerminal className='w-4 h-4' />
       },
       {
-        title: 'React',
-        href: '/projects?tag=React',
-        icon: <RiReactjsLine className='w-4 h-4' />
+        title: 'Blockchain',
+        href: '/projects?tag=Blockchain',
+        icon: <SiBlockchaindotcom className='w-4 h-4' />
       },
       {
-        title: 'React Native',
-        href: '/projects?tag=React Native',
-        icon: <RiReactjsLine className='w-4 h-4' />
+        title: 'Artificial Intelligence',
+        href: '/projects?tag=Artificial Intelligence',
+        icon: <GiArtificialIntelligence className='w-4 h-4' />
       },
       {
-        title: 'Next',
-        href: '/projects?tag=Next',
-        icon: <TbBrandNextjs className='w-4 h-4' />
+        title: 'Music Production',
+        href: '/projects?tag=Music Production',
+        icon: <CiMusicNote1 className='w-4 h-4' />
       },
       {
-        title: 'HTML',
-        href: '/projects?tag=HTML',
-        icon: <RiHtml5Fill className='w-4 h-4' />
+        title: 'Full Stack',
+        href: '/projects?tag=Full Stack',
+        icon: <FaCode className='w-4 h-4' />
+      },
+      {
+        title: 'Cyber Security',
+        href: '/projects?tag=Cyber Security',
+        icon: <MdOutlineSecurity className='w-4 h-4' />
+      },
+      {
+        title: 'Game Development',
+        href: '/projects?tag=Game Development',
+        icon: <IoLogoGameControllerA className='w-4 h-4' />
+      },
+      {
+        title: 'Software Development',
+        href: '/projects?tag=Software Development',
+        icon: <FaCode className='w-4 h-4' />
       }
     ]
   }
