@@ -1,11 +1,3 @@
-# Wisnu's Homepage
-
-## Preview
-
-![Preview 1](./public/preview-1.png)
-![Preview 2](./public/preview-2.png)
-![Preview 3](./public/preview-3.png)
-
 ## Stack
 
 - [NextJS 14 (App Router)](https://nextjs.org) - Next.js is a React framework for building full-stack web applications
