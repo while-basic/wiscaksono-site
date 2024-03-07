@@ -99,6 +99,16 @@ const data = [
         title: 'Software Development',
         href: '/projects?tag=Software Development',
         icon: <FaCode className='w-4 h-4' />
+      },
+      {
+        title: 'Machine Learning',
+        href: '/projects?tag=Machine Learning',
+        icon: <FaCode className='w-4 h-4' />
+      },
+      {
+        title: 'Deep Learning',
+        href: '/projects?tag=Deep Learning',
+        icon: <FaCode className='w-4 h-4' />
       }
     ]
   }
