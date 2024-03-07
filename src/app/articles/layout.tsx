@@ -3,6 +3,8 @@ import { RiReactjsLine, RiArticleLine } from 'react-icons/ri'
 import { LiaBookSolid } from 'react-icons/lia'
 import { Suspense } from 'react'
 import { useParams } from 'next/navigation'
+import { MdOutlinePrecisionManufacturing } from "react-icons/md";
+import { PiBooks } from "react-icons/pi";
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/atoms/accordion'
 import { AsideLink } from '@/components/atoms/aside-link'
@@ -55,14 +57,19 @@ const TAGS = [
         icon: RiArticleLine
       },
       {
-        title: 'React',
-        href: '/articles?tag=React',
-        icon: RiReactjsLine
+        title: 'Manufacturing',
+        href: '/articles?tag=Manufacturing',
+        icon: MdOutlinePrecisionManufacturing
       },
       {
-        title: 'Non Technical',
-        href: '/articles?tag=Non Technical',
-        icon: LiaBookSolid
+        title: 'Computer Science',
+        href: '/articles?tag=Computer Science',
+        icon: PiBooks
+      },
+      {
+        title: 'Artificial Intelligence',
+        href: '/articles?tag=Artificial Intelligence',
+        icon: PiBooks
       }
     ]
   }

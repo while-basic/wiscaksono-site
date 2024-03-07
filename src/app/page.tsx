@@ -19,11 +19,11 @@ export default function Home() {
           </header>
 
           <div className='space-y-2 sm:text-sm text-xs'>
-            <p className='text-muted-foreground'>{`// you can also see it on my Github page`}</p>
+            <p className='text-muted-foreground'>{`// Check out my Github page`}</p>
             <p className='text-muted-foreground'>
               <span className='text-purple'>const</span> <span className='text-green'>githubLink</span> ={' '}
-              <a target='_blank' href='https://github.com/wiscaksono/while-basic' className='text-light-brown hover:underline hover:text-foreground transition-colors'>
-                &apos;https://github.com/wiscaksono/while-basic&apos;
+              <a target='_blank' href='https://github.com/while-basic' className='text-light-brown hover:underline hover:text-foreground transition-colors'>
+                &apos;https://github.com/while-basic&apos;
               </a>
             </p>
           </div>
