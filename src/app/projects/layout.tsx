@@ -8,6 +8,7 @@ import { CiMusicNote1 } from "react-icons/ci";
 import { FaCode } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 import { IoLogoGameControllerA } from "react-icons/io";
+import { FaBitcoin } from "react-icons/fa";
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/atoms/accordion'
 import { AsideLink } from '@/components/atoms/aside-link'
@@ -103,17 +104,22 @@ const data = [
       {
         title: 'Machine Learning',
         href: '/projects?tag=Machine Learning',
-        icon: <FaCode className='w-4 h-4' />
+        icon: <GiArtificialIntelligence className='w-4 h-4' />
       },
       {
         title: 'Deep Learning',
         href: '/projects?tag=Deep Learning',
-        icon: <FaCode className='w-4 h-4' />
+        icon: <GiArtificialIntelligence className='w-4 h-4' />
       },
       {
         title: 'Large Language Model',
         href: '/projects?tag=Large Language Model',
-        icon: <FaCode className='w-4 h-4' />
+        icon: <GiArtificialIntelligence className='w-4 h-4' />
+      },
+      {
+        title: 'Cryptocurrency',
+        href: '/projects?tag=Cryptocurrency',
+        icon: <FaBitcoin className='w-4 h-4' />
       }
     ]
   }
