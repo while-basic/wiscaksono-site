@@ -5,6 +5,7 @@ import { Suspense } from 'react'
 import { useParams } from 'next/navigation'
 import { MdOutlinePrecisionManufacturing } from "react-icons/md";
 import { PiBooks } from "react-icons/pi";
+import { GiArtificialIntelligence } from "react-icons/gi";
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/atoms/accordion'
 import { AsideLink } from '@/components/atoms/aside-link'
@@ -69,7 +70,7 @@ const TAGS = [
       {
         title: 'Artificial Intelligence',
         href: '/articles?tag=Artificial Intelligence',
-        icon: PiBooks
+        icon: GiArtificialIntelligence
       }
     ]
   }
