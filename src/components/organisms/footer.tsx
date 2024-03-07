@@ -55,7 +55,7 @@ export const Footer = async () => {
               </Link>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Today coding activity</p>
+              <p>Todays coding activity</p>
               <p className='text-sm text-muted-foreground'>click for more</p>
             </TooltipContent>
           </Tooltip>
