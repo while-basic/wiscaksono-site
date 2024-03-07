@@ -109,6 +109,11 @@ const data = [
         title: 'Deep Learning',
         href: '/projects?tag=Deep Learning',
         icon: <FaCode className='w-4 h-4' />
+      },
+      {
+        title: 'Large Language Model',
+        href: '/projects?tag=Large Language Model',
+        icon: <FaCode className='w-4 h-4' />
       }
     ]
   }
