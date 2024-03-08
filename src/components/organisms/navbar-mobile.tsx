@@ -133,35 +133,35 @@ export const navMenu = [
       }
     ]
   },
-  {
-    name: '_guest-book',
-    path: '/guest-book'
-  },
+  // {
+  //   name: '_guest-book',
+  //   path: '/guest-book'
+  // },
   {
     name: '_articles',
     path: '/articles'
   },
-  {
-    name: '_coding-activity',
-    child: [
-      {
-        name: 'Languages',
-        path: '/coding-activity'
-      },
-      {
-        name: 'Activity',
-        path: '/coding-activity/activity'
-      },
-      {
-        name: 'Code Editor',
-        path: '/coding-activity/code-editor'
-      },
-      {
-        name: 'Operating Systems',
-        path: '/coding-activity/operating-systems'
-      }
-    ]
-  },
+  // {
+  //   name: '_coding-activity',
+  //   child: [
+  //     {
+  //       name: 'Languages',
+  //       path: '/coding-activity'
+  //     },
+  //     {
+  //       name: 'Activity',
+  //       path: '/coding-activity/activity'
+  //     },
+  //     {
+  //       name: 'Code Editor',
+  //       path: '/coding-activity/code-editor'
+  //     },
+  //     {
+  //       name: 'Operating Systems',
+  //       path: '/coding-activity/operating-systems'
+  //     }
+  //   ]
+  // },
   {
     name: '_contact',
     child: [
