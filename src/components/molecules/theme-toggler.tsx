@@ -1,14 +1,44 @@
 'use client'
 
 import * as React from 'react'
+import { useState } from 'react' // Import useState
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 
 import { Button } from '@/components/atoms/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/atoms/dropdown-menu'
 
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger
+} from '@/components/ui/alert-dialog'
+
 export function ThemeToggle() {
   const { setTheme } = useTheme()
+  // Inside your ThemeToggle function
+  const [isDialogOpen, setIsDialogOpen] = useState(false)
+
+  const handleLightThemeSelection = e => {
+    e.preventDefault() // Prevent default action
+    e.stopPropagation() // Stop event propagation
+    setIsDialogOpen(true) // Open the dialog
+  }
+
+  const confirmLightTheme = () => {
+    setTheme('light')
+    setIsDialogOpen(false)
+  }
+
+  const cancelLightTheme = () => {
+    setIsDialogOpen(false) // Close the dialog without changing the theme
+  }
 
   return (
     <DropdownMenu>
@@ -19,21 +49,31 @@ export function ThemeToggle() {
           <span className='sr-only'>Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
+
       <DropdownMenuContent align='end'>
-        <DropdownMenuItem
-          data-umami-event='theme-toggle-light'
-          onClick={() => {
-            confirm('Get ready for a flashbang! 🌟 \nAre you sure you want to switch to the light mode? 💡💥') && setTheme('light')
-          }}
-        >
-          Light
-        </DropdownMenuItem>
+        <AlertDialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+          <AlertDialogTrigger asChild>
+            <DropdownMenuItem onClick={handleLightThemeSelection}>Light</DropdownMenuItem>
+          </AlertDialogTrigger>
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <AlertDialogTitle>Get ready for a flashbang! 🌟</AlertDialogTitle>
+              <AlertDialogDescription>Are you sure you want to switch to the light mode? 💡💥</AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogCancel onClick={() => setIsDialogOpen(false)}>Cancel</AlertDialogCancel>
+              <AlertDialogAction onClick={confirmLightTheme}>Continue</AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
+
         <DropdownMenuItem data-umami-event='theme-toggle-dark' onClick={() => setTheme('dark')}>
           Dark
         </DropdownMenuItem>
         <DropdownMenuItem data-umami-event='theme-toggle-system' onClick={() => setTheme('system')}>
           System
         </DropdownMenuItem>
+
       </DropdownMenuContent>
     </DropdownMenu>
   )
