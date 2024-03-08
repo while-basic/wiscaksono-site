@@ -55,16 +55,14 @@ export default function AboutLayout({ children }: { children: React.ReactNode })
                     </FadeIn>
                   ))}
                 </FadeInStagger>
-                
               </AccordionContent>
-              
-              
             </AccordionItem>
-          ))}
-        </Accordion>
-
-        
-      </aside>
+          )
+        )
+      }
+      </Accordion> 
+    </aside>
+    
       <section className='md:col-span-9 lg:col-span-10 col-span-12 overflow-y-auto relative h-[84dvh] md:h-auto'>{children}</section>
     </section>
     
@@ -134,41 +132,6 @@ const data = [
         title: 'Cryptocurrency',
         href: '/projects?tag=Cryptocurrency',
         icon: <FaBitcoin className='w-4 h-4' />
-      }
-    ]
-  },
-  {
-    title: 'Experience',
-    list: [
-      {
-        title: 'T5 Data Centers',
-        href: '/experience?tag=T5',
-        icon: <FaRegBuilding className='w-4 h-4' />
-      },
-      {
-        title: 'CN Wire',
-        href: '/experience?tag=CN Wire',
-        icon: <GiWireCoil className='w-4 h-4' />
-      },
-      {
-        title: 'SchneiderElectric',
-        href: '/experience?tag=SchneiderElectric',
-        icon: <SiSchneiderelectric className='w-4 h-4' />
-      },
-      {
-        title: 'Self Employed',
-        href: '/experience?tag=Self Employed',
-        icon: <MdConstruction className='w-4 h-4' />
-      },
-      {
-        title: 'Delfingen',
-        href: '/experience?tag=Delfingen',
-        icon: <FaSheetPlastic className='w-4 h-4' />
-      },
-      {
-        title: 'Dal-Tile',
-        href: '/experience?tag=Dal-Tile',
-        icon: <FaRegSquare className='w-4 h-4' />
       }
     ]
   }
