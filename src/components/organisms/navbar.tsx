@@ -32,16 +32,16 @@ export const navMenu = [
     path: '/'
   },
   {
+    name: '_test',
+    path: '/test'
+  },
+  {
     name: '_about',
     path: '/about'
   },
   {
     name: '_content',
     path: '/projects'
-  },
-  {
-    name: '_experience',
-    path: '/experience'
   },
   // {
   //   name: '_guest-book',

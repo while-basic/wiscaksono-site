@@ -75,8 +75,8 @@ const data = [
         icon: <FaRegBuilding className='w-4 h-4' />
       },
       {
-        title: 'CN Wire',
-        href: '/experience?tag=CN Wire',
+        title: 'CN',
+        href: '/experience?tag=CN',
         icon: <GiWireCoil className='w-4 h-4' />
       },
       {
