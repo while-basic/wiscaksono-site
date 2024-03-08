@@ -39,6 +39,10 @@ export const navMenu = [
     name: '_projects',
     path: '/projects'
   },
+  {
+    name: '_experience',
+    path: '/experience'
+  },
   // {
   //   name: '_guest-book',
   //   path: '/guest-book'
