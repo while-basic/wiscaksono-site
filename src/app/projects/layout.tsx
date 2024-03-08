@@ -5,7 +5,7 @@ import { HiTerminal } from 'react-icons/hi'
 import { SiBlockchaindotcom } from "react-icons/si";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { CiMusicNote1 } from "react-icons/ci";
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaServer } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 import { IoLogoGameControllerA } from "react-icons/io";
 import { FaBitcoin } from "react-icons/fa";
@@ -26,8 +26,10 @@ export const metadata = generateSEO(title, description, image, url)
 
 export default function AboutLayout({ children }: { children: React.ReactNode }) {
   return (
+
     <section className='grid grid-cols-12 overflow-hidden h-full'>
       <aside className='md:col-span-3 lg:col-span-2 border-r border-lines md:block hidden overflow-y-auto'>
+        
         <Accordion type='single' collapsible defaultValue='item-0'>
           {data.map((item, i) => (
             <AccordionItem value={`item-${i}`} key={i}>
@@ -47,13 +49,19 @@ export default function AboutLayout({ children }: { children: React.ReactNode })
                     </FadeIn>
                   ))}
                 </FadeInStagger>
+                
               </AccordionContent>
+              
+              
             </AccordionItem>
           ))}
         </Accordion>
+
+        
       </aside>
       <section className='md:col-span-9 lg:col-span-10 col-span-12 overflow-y-auto relative h-[84dvh] md:h-auto'>{children}</section>
     </section>
+    
   )
 }
 
@@ -120,6 +128,16 @@ const data = [
         title: 'Cryptocurrency',
         href: '/projects?tag=Cryptocurrency',
         icon: <FaBitcoin className='w-4 h-4' />
+      }
+    ]
+  },
+  {
+    title: 'Experience',
+    list: [
+      {
+        title: 'T5 Data Centers',
+        href: '/experience?tag=T5 Data Centers',
+        icon: <FaServer className='w-4 h-4' />
       }
     ]
   }

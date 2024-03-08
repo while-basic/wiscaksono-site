@@ -34,5 +34,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date().toISOString().split('T')[0]
   }))
 
-  return [...routes, ...abouts, ...projects, ...activities, ...articles]
+  const experience = allExperience.map(article => ({
+    url: `${WEBSITE_URL}/experience/${article.slug.toLowerCase()}`,
+    lastModified: new Date().toISOString().split('T')[0]
+  }))
+
+  return [...routes, ...abouts, ...projects, ...activities, ...articles, ...experience]
 }
