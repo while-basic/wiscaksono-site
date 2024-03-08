@@ -36,7 +36,7 @@ export const navMenu = [
     path: '/about'
   },
   {
-    name: '_projects',
+    name: '_content',
     path: '/projects'
   },
   {
@@ -47,8 +47,8 @@ export const navMenu = [
   //   name: '_guest-book',
   //   path: '/guest-book'
   // },
-  {
-    name: '_articles',
-    path: '/articles'
-  }
+  // {
+  //   name: '_articles',
+  //   path: '/articles'
+  // }
 ]

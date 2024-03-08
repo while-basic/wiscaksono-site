@@ -70,7 +70,7 @@ const data = [
     title: 'Projects',
     list: [
       {
-        title: 'All Projects',
+        title: 'All Content',
         href: '/projects',
         icon: <HiTerminal className='w-4 h-4' />
       },
@@ -138,7 +138,18 @@ const data = [
         title: 'T5 Data Centers',
         href: '/experience?tag=T5 Data Centers',
         icon: <FaServer className='w-4 h-4' />
+      },
+      {
+        title: 'CN Wire',
+        href: '/experience?tag=CN Wire',
+        icon: <FaServer className='w-4 h-4' />
+      },
+      {
+        title: 'Schneider Electric',
+        href: '/experience?tag=Schneider Electric',
+        icon: <FaServer className='w-4 h-4' />
       }
     ]
   }
 ]
+
