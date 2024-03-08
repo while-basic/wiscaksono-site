@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { BiGitBranch, BiRefresh, BiXCircle } from 'react-icons/bi'
 import { IoWarningOutline, IoLogoGithub } from 'react-icons/io5'
 import { AiOutlineClockCircle } from 'react-icons/ai'
+import { IoIosDocument } from "react-icons/io";
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/atoms/tooltip'
 import { weeklyCodingActivity } from '@/lib/actions'
@@ -21,6 +22,7 @@ export const Footer = async () => {
           <BiGitBranch className='text-lg' />
           <p>main</p>
         </Link>
+        
         <button
           aria-label='refetch'
           className='items-center gap-x-2 px-2 py-1 md:flex hidden group hover:text-foreground text-muted-foreground transition-colors'
@@ -42,6 +44,7 @@ export const Footer = async () => {
             <TooltipContent>No problems</TooltipContent>
           </Tooltip>
         </TooltipProvider>
+
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
@@ -60,8 +63,9 @@ export const Footer = async () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
+
         <Link
-          href='mailto:chris@chriscelaya.xyz'
+          href='https://cal.com/chriscelaya'
           target='_blank'
           className='items-center gap-x-1.5 px-2 py-1 md:flex hidden text-muted-foreground hover:text-foreground transition-colors'
         >
@@ -72,16 +76,29 @@ export const Footer = async () => {
 
       <div className='flex items-center divide-x divide border-l'>
         <div className='items-center gap-x-2 px-2 py-1 lg:flex hidden text-muted-foreground'>
-          <p>Special thanks to:</p>
-          <Link href='https://www.behance.net/darelova' target='_blank' className='hover:text-foreground transition-colors'>
-            Yanka Darelova
+        <IoIosDocument className='text-lg' />
+
+          <Link href='https://drive.google.com/file/d/1NRR7765FgYZODMvCGZQNypgvSENoSGWM/view?usp=sharing' target='_blank' className='hover:text-foreground transition-colors'>
+            Download Resume
           </Link>
         </div>
-        <Link target='_blank' href='https://github.com/wiscaksono' className='flex items-center gap-x-1 px-2 py-1 hover:text-foreground text-muted-foreground transition-colors'>
-          <p>Celaya</p>
+        
+        <Link
+          href='https://cal.com/chriscelaya'
+          target='_blank'
+          className='items-center gap-x-1.5 px-2 py-1 md:flex hidden text-muted-foreground hover:text-foreground transition-colors'
+        >
+          <span>Schedule a meeting</span>
+        </Link>
+
+        <Link target='_blank' href='https://github.com/while-basic' className='flex items-center gap-x-1 px-2 py-1 hover:text-foreground text-muted-foreground transition-colors'>
+          <p>View Github</p>
           <IoLogoGithub className='text-lg' />
         </Link>
       </div>
     </footer>
   )
 }
+
+
+// https://cal.com/chriscelaya
