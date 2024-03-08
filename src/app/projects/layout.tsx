@@ -9,6 +9,12 @@ import { FaCode, FaServer } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 import { IoLogoGameControllerA } from "react-icons/io";
 import { FaBitcoin } from "react-icons/fa";
+import { FaRegBuilding } from "react-icons/fa";
+import { GiWireCoil } from "react-icons/gi";
+import { SiSchneiderelectric } from "react-icons/si";
+import { MdConstruction } from "react-icons/md";
+import { FaSheetPlastic } from "react-icons/fa6";
+import { FaRegSquare } from "react-icons/fa6";
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/atoms/accordion'
 import { AsideLink } from '@/components/atoms/aside-link'
@@ -128,6 +134,41 @@ const data = [
         title: 'Cryptocurrency',
         href: '/projects?tag=Cryptocurrency',
         icon: <FaBitcoin className='w-4 h-4' />
+      }
+    ]
+  },
+  {
+    title: 'Experience',
+    list: [
+      {
+        title: 'T5 Data Centers',
+        href: '/experience?tag=T5',
+        icon: <FaRegBuilding className='w-4 h-4' />
+      },
+      {
+        title: 'CN Wire',
+        href: '/experience?tag=CN Wire',
+        icon: <GiWireCoil className='w-4 h-4' />
+      },
+      {
+        title: 'SchneiderElectric',
+        href: '/experience?tag=SchneiderElectric',
+        icon: <SiSchneiderelectric className='w-4 h-4' />
+      },
+      {
+        title: 'Self Employed',
+        href: '/experience?tag=Self Employed',
+        icon: <MdConstruction className='w-4 h-4' />
+      },
+      {
+        title: 'Delfingen',
+        href: '/experience?tag=Delfingen',
+        icon: <FaSheetPlastic className='w-4 h-4' />
+      },
+      {
+        title: 'Dal-Tile',
+        href: '/experience?tag=Dal-Tile',
+        icon: <FaRegSquare className='w-4 h-4' />
       }
     ]
   }
