@@ -113,10 +113,10 @@ export const navMenu = [
     ]
   },
   {
-    name: '_projects',
+    name: '_content',
     child: [
       {
-        name: 'All Projects',
+        name: 'All Content',
         path: '/projects'
       },
       {
@@ -137,10 +137,10 @@ export const navMenu = [
   //   name: '_guest-book',
   //   path: '/guest-book'
   // },
-  {
-    name: '_articles',
-    path: '/articles'
-  },
+  // {
+  //   name: '_articles',
+  //   path: '/articles'
+  // },
   // {
   //   name: '_coding-activity',
   //   child: [

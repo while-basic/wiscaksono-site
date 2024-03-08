@@ -67,7 +67,7 @@ export default function AboutLayout({ children }: { children: React.ReactNode })
 
 const data = [
   {
-    title: 'Work Experience',
+    title: 'Experience',
     list: [
       {
         title: 'T5 Data Centers',
