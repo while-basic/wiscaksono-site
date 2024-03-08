@@ -70,7 +70,7 @@ const data = [
     title: 'Projects',
     list: [
       {
-        title: 'All Content',
+        title: 'All Tags',
         href: '/projects',
         icon: <HiTerminal className='w-4 h-4' />
       },

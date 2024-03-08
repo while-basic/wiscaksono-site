@@ -120,8 +120,8 @@ export const navMenu = [
         path: '/projects'
       },
       {
-        name: 'React',
-        path: '/projects?tag=react'
+        name: 'Projects',
+        path: '/projects?tag=projects'
       },
       {
         name: 'Next',
