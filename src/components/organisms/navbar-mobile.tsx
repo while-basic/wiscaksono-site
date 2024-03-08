@@ -123,13 +123,10 @@ export const navMenu = [
         name: 'Projects',
         path: '/projects?tag=projects'
       },
+      ,
       {
-        name: 'Next',
-        path: '/projects?tag=next'
-      },
-      {
-        name: 'HTML',
-        path: '/projects?tag=html'
+        name: 'Experience',
+        path: '/projects?tag=experience'
       }
     ]
   },

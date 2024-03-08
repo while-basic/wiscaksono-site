@@ -18,7 +18,7 @@ import { generateSEO } from '@/lib/generateSEO'
 
 const title = 'projects'
 const description =
-  'Discover the interactive brilliance of my projects, peruse my polished portfolio, and delve into a sneak peek of my formidable technical prowess. Uncover a world where innovation meets functionality, showcased through a meticulously crafted Next.js application. Elevate your digital experience with a seamless blend of creativity and technical finesse.'
+  'Project section'
 const url = `${ENV.NEXT_PUBLIC_WEBSITE_URL}/projects`
 const image = `${ENV.NEXT_PUBLIC_WEBSITE_URL}/api/og?title=${title}`
 
@@ -128,26 +128,6 @@ const data = [
         title: 'Cryptocurrency',
         href: '/projects?tag=Cryptocurrency',
         icon: <FaBitcoin className='w-4 h-4' />
-      }
-    ]
-  },
-  {
-    title: 'Experience',
-    list: [
-      {
-        title: 'T5 Data Centers',
-        href: '/experience?tag=T5 Data Centers',
-        icon: <FaServer className='w-4 h-4' />
-      },
-      {
-        title: 'CN Wire',
-        href: '/experience?tag=CN Wire',
-        icon: <FaServer className='w-4 h-4' />
-      },
-      {
-        title: 'Schneider Electric',
-        href: '/experience?tag=Schneider Electric',
-        icon: <FaServer className='w-4 h-4' />
       }
     ]
   }
